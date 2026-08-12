@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porsche India | Driven by Obsession</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <button class="menu-trigger" id="menuTrigger" aria-haspopup="true" aria-expanded="false" aria-controls="drawer">
+      <i class="fa-solid fa-bars"></i> Menu
+    </button>
+    <a href="#" class="wordmark">PORSCHE</a>
+    <div class="header-spacer" aria-hidden="true"></div>
+  </header>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <nav class="drawer" id="drawer" aria-label="Main menu">
+    <div class="drawer-top">
+      <span class="wordmark" style="position:static; transform:none;">PORSCHE<span>.</span></span>
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div class="drawer-group">
+      <h3>Build &amp; Find</h3>
+      <ul>
+        <li><a href="#">Build your Porsche</a></li>
+        <li><a href="#">Compare Models</a></li>
+        <li><a href="#">Search Pre-Owned</a></li>
+        <li><a href="#">Find your Porsche Centre</a></li>
+      </ul>
+    </div>
+    <div class="drawer-group">
+      <h3>Online Services</h3>
+      <ul>
+        <li><a href="login.html">Porsche Login</a></li>
+        <li><a href="#">Sign up for News</a></li>
+      </ul>
+    </div>
+    <div class="drawer-group">
+      <h3>Behind the Scenes</h3>
+      <ul>
+        <li><a href="#">Passion Motorsports</a></li>
+        <li><a href="#">Porsche Experience</a></li>
+        <li><a href="#">Porsche Classic</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="hero" id="hero">
+    <div class="hero-slide active" style="background-image:url('img/slider1.webp')"></div>
+    <div class="hero-slide" style="background-image:url('img/slider2.webp')"></div>
+    <div class="hero-slide" style="background-image:url('img/slider3.webp')"></div>
+    <div class="hero-slide" style="background-image:url('img/slider4.webp')"></div>
+
+    <div class="hero-content">
+      <span class="eyebrow">Porsche India</span>
+      <h1>Driven by Obsession</h1>
+      <p>Every model is engineered around one idea: the drive itself. Explore the current line-up and configure the
+        Porsche that's yours.</p>
+      <a href="#models" class="btn-primary">Explore the Line-up <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
+    <div class="hero-controls">
+      <div class="hero-dots" id="heroDots"></div>
+      <div class="hero-arrows">
+        <button class="hero-arrow" id="heroPrev" aria-label="Previous slide"><i
+            class="fa-solid fa-chevron-left"></i></button>
+        <button class="hero-arrow" id="heroNext" aria-label="Next slide"><i
+            class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MODELS
+  ============================================================ -->
+  <section class="section" id="models">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">The Line-up</span>
+        <h2>Models</h2>
+      </div>
+      <p class="lede">Six distinct silhouettes, one shared philosophy. Configure any model to your specification.</p>
+    </div>
+
+    <div class="model-grid" id="modelGrid">
+
+      <div class="model-card">
+        <div class="model-media">
+          <img src="img/718.jpeg" alt="Porsche 718" />
+          <span class="fallback-mark">718</span>
+        </div>
+        <div class="model-body">
+          <h3 class="name">718</h3>
+          <p class="price">from <b>INR</b> 14,772,000</p>
+          <a href="#" class="model-cta"><i class="fa-solid fa-arrow-up-right-from-square"></i> Build Your Own</a>
+        </div>
+      </div>
+
+      <div class="model-card">
+        <div class="model-media">
+          <img src="img/911.jpg" alt="Porsche 911" />
+          <span class="fallback-mark">911</span>
+        </div>
+        <div class="model-body">
+          <h3 class="name">911</h3>
+          <p class="price">from <b>INR</b> 18,646,000</p>
+          <a href="911page.html" target="_blank" class="model-cta"><i
+              class="fa-solid fa-arrow-up-right-from-square"></i> Build Your Own</a>
+        </div>
+      </div>
+
+      <div class="model-card">
+        <div class="model-media">
+          <img src="img/tycan.webp" alt="Porsche Taycan" />
+          <span class="fallback-mark">Taycan</span>
+        </div>
+        <div class="model-body">
+          <h3 class="name">Taycan</h3>
+          <p class="price">from <b>INR</b> 16,096,000</p>
+          <a href="Tycanpage.html" target="_blank" class="model-cta"><i
+              class="fa-solid fa-arrow-up-right-from-square"></i> Build Your Own</a>
+        </div>
+      </div>
+
+      <div class="model-card">
+        <div class="model-media">
+          <img src="img/panamera.jpg" alt="Porsche Panamera" />
+          <span class="fallback-mark">Panamera</span>
+        </div>
+        <div class="model-body">
+          <h3 class="name">Panamera</h3>
+          <p class="price">from <b>INR</b> 15,804,000</p>
+          <a href="#" class="model-cta"><i class="fa-solid fa-arrow-up-right-from-square"></i> Build Your Own</a>
+        </div>
+      </div>
+
+      <div class="model-card">
+        <div class="model-media">
+          <img src="img/macann.jpg" alt="Porsche Macan" />
+          <span class="fallback-mark">Macan</span>
+        </div>
+        <div class="model-body">
+          <h3 class="name">Macan</h3>
+          <p class="price">from <b>INR</b> 8,806,000</p>
+          <a href="#" class="model-cta"><i class="fa-solid fa-arrow-up-right-from-square"></i> Build Your Own</a>
+        </div>
+      </div>
+
+      <div class="model-card">
+        <div class="model-media">
+          <img src="img/cayenne.jpg" alt="Porsche Cayenne" />
+          <span class="fallback-mark">Cayenne</span>
+        </div>
+        <div class="model-body">
+          <h3 class="name">Cayenne</h3>
+          <p class="price">from <b>INR</b> 13,561,000</p>
+          <a href="#" class="model-cta"><i class="fa-solid fa-arrow-up-right-from-square"></i> Build Your Own</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer>
+    <div class="foot-menu">
+      <div class="foot-col">
+        <button class="foot-col-trigger">Build &amp; Find <i class="fa-solid fa-chevron-down"></i></button>
+        <ul class="foot-col-body">
+          <li><a href="#">Build your Porsche</a></li>
+          <li><a href="#">Compare Models</a></li>
+          <li><a href="#">Search Pre-Owned</a></li>
+          <li><a href="#">Find your Porsche Centre</a></li>
+          <li><a href="#">Download the model range catalogue</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <button class="foot-col-trigger">Online Services <i class="fa-solid fa-chevron-down"></i></button>
+        <ul class="foot-col-body">
+          <li><a href="#">Porsche Login</a></li>
+          <li><a href="#">Sign up for News</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <button class="foot-col-trigger">Behind the Scenes <i class="fa-solid fa-chevron-down"></i></button>
+        <ul class="foot-col-body">
+          <li><a href="#">Passion Motorsports</a></li>
+          <li><a href="#">Porsche Experience</a></li>
+          <li><a href="#">Porsche Classic</a></li>
+          <li><a href="#">Visit Porsche Museum</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <button class="foot-col-trigger">Porsche Company <i class="fa-solid fa-chevron-down"></i></button>
+        <ul class="foot-col-body">
+          <li><a href="#">Latest News</a></li>
+          <li><a href="#">At a Glance</a></li>
+          <li><a href="#">Jobs &amp; Careers</a></li>
+          <li><a href="#">Contact &amp; Information</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="legal">
+      <div class="legal-inner">
+        <div class="region-select">
+          <label for="regionSelect">Change country / region</label>
+          <select name="region" id="regionSelect">
+            <option value="">Select a region</option>
+            <option value="north-america">North America</option>
+            <option value="europe">Europe</option>
+            <option value="asia">Asia</option>
+            <option value="australia">Australia</option>
+          </select>
+        </div>
+
+        <div class="copyright">
+          <i class="fa-regular fa-copyright"></i> 2026 Porsche India — SKODA AUTO Volkswagen India Private Limited,
+          India. <u>Legal notice</u>, <u>Cookie &amp; Privacy Policy</u>, <u>Corporate Governance</u>,
+          <u>Open Source Software Notice</u>, <u>Whistleblower System</u>, <u>Business and Human Rights</u>.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ============================================================
+    // HEADER — shrink / solidify on scroll
+    // ============================================================
+    const header = document.getElementById('siteHeader');
+    const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 30);
+    document.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // ============================================================
+    // DRAWER MENU
+    // ============================================================
+    const drawer = document.getElementById('drawer');
+    const backdrop = document.getElementById('drawerBackdrop');
+    const menuTrigger = document.getElementById('menuTrigger');
+    const drawerClose = document.getElementById('drawerClose');
+
+    function openDrawer() {
+      drawer.classList.add('open');
+      backdrop.classList.add('open');
+      menuTrigger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeDrawer() {
+      drawer.classList.remove('open');
+      backdrop.classList.remove('open');
+      menuTrigger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+    menuTrigger.addEventListener('click', openDrawer);
+    drawerClose.addEventListener('click', closeDrawer);
+    backdrop.addEventListener('click', closeDrawer);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
+
+    // ============================================================
+    // HERO CAROUSEL
+    // ============================================================
+    const slides = Array.from(document.querySelectorAll('.hero-slide'));
+    const dotsWrap = document.getElementById('heroDots');
+    let current = 0;
+    let timer;
+
+    slides.forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.className = 'hero-dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+      dot.addEventListener('click', () => goTo(i));
+      dotsWrap.appendChild(dot);
+    });
+    const dots = Array.from(dotsWrap.children);
+
+    function goTo(index) {
+      slides[current].classList.remove('active');
+      dots[current].classList.remove('active');
+      current = (index + slides.length) % slides.length;
+      slides[current].classList.add('active');
+      dots[current].classList.add('active');
+      resetTimer();
+    }
+    function next() { goTo(current + 1); }
+    function prev() { goTo(current - 1); }
+    function resetTimer() {
+      clearInterval(timer);
+      timer = setInterval(next, 6000);
+    }
+
+    document.getElementById('heroNext').addEventListener('click', next);
+    document.getElementById('heroPrev').addEventListener('click', prev);
+    resetTimer();
+
+    // swipe support
+    let touchStartX = 0;
+    const hero = document.getElementById('hero');
+    hero.addEventListener('touchstart', e => touchStartX = e.touches[0].clientX, { passive: true });
+    hero.addEventListener('touchend', e => {
+      const diff = e.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(diff) > 40) diff < 0 ? next() : prev();
+    }, { passive: true });
+
+    // ============================================================
+    // SCROLL REVEAL — model cards
+    // ============================================================
+    const cards = document.querySelectorAll('.model-card');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('in-view'), i * 60);
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    cards.forEach(card => io.observe(card));
+
+    // ============================================================
+    // FOOTER ACCORDION (mobile only — CSS handles desktop override)
+    // ============================================================
+    document.querySelectorAll('.foot-col-trigger').forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (window.innerWidth >= 640) return;
+        btn.parentElement.classList.toggle('open');
+      });
+    });
+  </script>
+
+</body>
+
+</html>
